@@ -40,11 +40,11 @@ def run(scenario, model_path=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--scenario', choices=['all', 'can', 'miss', 'far'], default='all')
+    parser.add_argument('--scenario', choices=['all', 'can', 'miss', 'far', 'offset'], default='all')
     parser.add_argument('--model', type=Path, help='Optional scene MJCF, e.g. model/moss_visual.xml')
     parser.add_argument('--output', type=Path, help='Write a JSON result as well as stdout')
     args = parser.parse_args()
-    scenes = ('can', 'miss', 'far') if args.scenario == 'all' else (args.scenario,)
+    scenes = ('can', 'miss', 'far', 'offset') if args.scenario == 'all' else (args.scenario,)
     results = [run(scene, args.model.resolve() if args.model else None) for scene in scenes]
     report = {'passed': all(r['passed'] for r in results), 'results': results}
     raw = json.dumps(report, indent=2) + '\n'

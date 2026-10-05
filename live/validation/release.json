@@ -373,6 +373,7 @@
     "public/replay/replay.json": "1e4c5a901b90faf772b2bcb6429d0b2069a2790f6812acaa04597691f24b6b5a",
     "recordings/can.json": "4d2476e1896a05880960a9610b11cfad57c092deef5c45ac314e457fb6d18a7e",
     "recordings/far.json": "c3245c228619b61c73fcea20be0dc7e55dd9fc03ea92f73f651040f9a1e49fbd",
-    "recordings/miss.json": "031da92e5c036e47653bcb2db076a28bb029edb80db7725dc3b32b8f7cf5daa9"
+    "recordings/miss.json": "031da92e5c036e47653bcb2db076a28bb029edb80db7725dc3b32b8f7cf5daa9",
+    "recordings/offset.json": "c567c7007bf4fc566822f6118b65044970b8581435e34cfc36664e29d18c74bc"
   }
 }

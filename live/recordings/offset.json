@@ -1,0 +1,461 @@
+{
+  "scenario": "offset",
+  "source": "Recorded real Jev API decisions; physics replayed locally",
+  "rows": [
+    {
+      "observation": {
+        "object_m": [
+          0.3,
+          0.055,
+          0.0575
+        ],
+        "tcp_m": [
+          0.2864,
+          0.0014,
+          0.2363
+        ],
+        "finger_contacts": 0,
+        "held": false,
+        "in_bin": false,
+        "settled_in_bin": false,
+        "gap_mm": 82.0,
+        "last_action": null,
+        "last_result": "Ready",
+        "attempts": 0,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 0.3,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0,
+        "base_x_m": 0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "approach",
+        "probabilities": {
+          "clear": 0,
+          "approach": 0.99,
+          "align": 0.01,
+          "stop": 0,
+          "lift": 0,
+          "close": 0,
+          "carry": 0,
+          "retry": 0,
+          "home": 0,
+          "reposition": 0,
+          "release": 0
+        },
+        "latency_ms": 508,
+        "cost": 4.6914e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    },
+    {
+      "observation": {
+        "object_m": [
+          0.3,
+          0.055,
+          0.0575
+        ],
+        "tcp_m": [
+          0.2977,
+          0.0545,
+          0.1394
+        ],
+        "finger_contacts": 0,
+        "held": false,
+        "in_bin": false,
+        "settled_in_bin": false,
+        "gap_mm": 82.0,
+        "last_action": "approach",
+        "last_result": "approach complete",
+        "attempts": 0,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 1.95,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0,
+        "base_x_m": 0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "align",
+        "probabilities": {
+          "retry": 0,
+          "lift": 0,
+          "align": 1,
+          "stop": 0,
+          "clear": 0,
+          "reposition": 0,
+          "home": 0,
+          "carry": 0,
+          "release": 0,
+          "approach": 0,
+          "close": 0
+        },
+        "latency_ms": 244,
+        "cost": 4.7208e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    },
+    {
+      "observation": {
+        "object_m": [
+          0.3069,
+          0.0556,
+          0.0573
+        ],
+        "tcp_m": [
+          0.3135,
+          0.0591,
+          0.0784
+        ],
+        "finger_contacts": 0,
+        "held": false,
+        "in_bin": false,
+        "settled_in_bin": false,
+        "gap_mm": 82.0,
+        "last_action": "align",
+        "last_result": "align complete",
+        "attempts": 0,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 3.6,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0717,
+        "base_x_m": -0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "close",
+        "probabilities": {
+          "retry": 0,
+          "lift": 0,
+          "clear": 0,
+          "release": 0,
+          "stop": 0,
+          "close": 0.96,
+          "carry": 0,
+          "align": 0.01,
+          "home": 0,
+          "reposition": 0.03
+        },
+        "latency_ms": 219,
+        "cost": 4.5864e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    },
+    {
+      "observation": {
+        "object_m": [
+          0.3095,
+          0.0545,
+          0.0587
+        ],
+        "tcp_m": [
+          0.3143,
+          0.0595,
+          0.08
+        ],
+        "finger_contacts": 2,
+        "held": false,
+        "in_bin": false,
+        "settled_in_bin": false,
+        "gap_mm": 65.0,
+        "last_action": "close",
+        "last_result": "Closed: 2 finger contacts",
+        "attempts": 1,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 4.7,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0023,
+        "base_x_m": -0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "lift",
+        "probabilities": {
+          "home": 0,
+          "lift": 0.75,
+          "reposition": 0,
+          "approach": 0.19,
+          "stop": 0,
+          "align": 0.06,
+          "retry": 0,
+          "close": 0,
+          "release": 0,
+          "carry": 0,
+          "clear": 0
+        },
+        "latency_ms": 221,
+        "cost": 4.7502e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    },
+    {
+      "observation": {
+        "object_m": [
+          0.3067,
+          0.0535,
+          0.1449
+        ],
+        "tcp_m": [
+          0.3124,
+          0.059,
+          0.1663
+        ],
+        "finger_contacts": 2,
+        "held": true,
+        "in_bin": false,
+        "settled_in_bin": false,
+        "gap_mm": 65.0,
+        "last_action": "lift",
+        "last_result": "lift complete",
+        "attempts": 1,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 6.55,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0025,
+        "base_x_m": -0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "clear",
+        "probabilities": {
+          "reposition": 0,
+          "release": 0.01,
+          "retry": 0,
+          "home": 0,
+          "lift": 0,
+          "carry": 0.04,
+          "close": 0,
+          "stop": 0,
+          "clear": 0.95,
+          "align": 0,
+          "approach": 0
+        },
+        "latency_ms": 213,
+        "cost": 4.7376e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    },
+    {
+      "observation": {
+        "object_m": [
+          0.2107,
+          0.0026,
+          0.3809
+        ],
+        "tcp_m": [
+          0.1903,
+          -0.0,
+          0.3984
+        ],
+        "finger_contacts": 2,
+        "held": true,
+        "in_bin": false,
+        "settled_in_bin": false,
+        "gap_mm": 64.9,
+        "last_action": "clear",
+        "last_result": "clear complete",
+        "attempts": 1,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 9.4,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0006,
+        "base_x_m": 0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "carry",
+        "probabilities": {
+          "release": 0.05,
+          "close": 0,
+          "approach": 0.01,
+          "align": 0,
+          "reposition": 0,
+          "home": 0,
+          "retry": 0,
+          "stop": 0,
+          "clear": 0.09,
+          "lift": 0.01,
+          "carry": 0.84
+        },
+        "latency_ms": 207,
+        "cost": 4.7292e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    },
+    {
+      "observation": {
+        "object_m": [
+          -0.1016,
+          0.0014,
+          0.3309
+        ],
+        "tcp_m": [
+          -0.0878,
+          -0.0,
+          0.3567
+        ],
+        "finger_contacts": 2,
+        "held": true,
+        "in_bin": false,
+        "settled_in_bin": false,
+        "gap_mm": 64.9,
+        "last_action": "carry",
+        "last_result": "carry complete",
+        "attempts": 1,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 14.26,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0005,
+        "base_x_m": -0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "release",
+        "probabilities": {
+          "clear": 0.02,
+          "approach": 0.01,
+          "close": 0,
+          "retry": 0,
+          "stop": 0,
+          "carry": 0.04,
+          "home": 0,
+          "lift": 0,
+          "release": 0.92,
+          "reposition": 0,
+          "align": 0.01
+        },
+        "latency_ms": 220,
+        "cost": 4.7376e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    },
+    {
+      "observation": {
+        "object_m": [
+          -0.0801,
+          -0.0258,
+          0.1697
+        ],
+        "tcp_m": [
+          -0.0885,
+          -0.0001,
+          0.3536
+        ],
+        "finger_contacts": 0,
+        "held": false,
+        "in_bin": true,
+        "settled_in_bin": true,
+        "gap_mm": 82.0,
+        "last_action": "release",
+        "last_result": "Object settled in bin",
+        "attempts": 1,
+        "missed_grasps": 0,
+        "needs_regrasp": false,
+        "grasp_attempts_left": 3,
+        "sim_seconds": 20.26,
+        "moving": false,
+        "scenario": "offset",
+        "object_speed_m_s": 0.0,
+        "base_x_m": 0.0,
+        "bin_target_m": [
+          -0.087,
+          0.0,
+          0.36
+        ],
+        "reposition_notice": false,
+        "within_work_area": true
+      },
+      "decision": {
+        "action": "stop",
+        "probabilities": {
+          "reposition": 0,
+          "lift": 0,
+          "align": 0,
+          "release": 0,
+          "stop": 1,
+          "close": 0,
+          "retry": 0,
+          "carry": 0,
+          "clear": 0,
+          "home": 0,
+          "approach": 0
+        },
+        "latency_ms": 251,
+        "cost": 4.746e-05,
+        "source": "jev_live",
+        "model": "typesafe/jev-1.13-20260917"
+      }
+    }
+  ]
+}

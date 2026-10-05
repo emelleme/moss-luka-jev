@@ -52,7 +52,7 @@ class PortableTests(unittest.TestCase):
 
     def test_all_visual_replays_offline(self):
         with patch('socket.socket.connect', side_effect=AssertionError('Network forbidden')):
-            for scenario in ('can', 'miss', 'far'):
+            for scenario in ('can', 'miss', 'far', 'offset'):
                 with self.subTest(scenario=scenario):
                     result = run(scenario, ROOT/'model/moss_visual.xml')
                     self.assertTrue(result['passed'], result)

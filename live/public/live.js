@@ -70,7 +70,7 @@ function accept(s){
  $('run').disabled=(s.api_enabled&&!s.key_ready)||s.running||s.pending||!modelReady;
  $('instruction').readOnly=!s.api_enabled;
  $('reach-modal').hidden=!o.reposition_notice;
- $('scenario-description').textContent=legacyName?'V0.1: recorded target selection and scripted motion.':({can:'Pick up a full-size can and drop it into the bin.',miss:'A first attempt misses. MOSS uses feedback to try again.',far:'The can is too far away. MOSS drives closer, then picks it up.'}[o.scenario]||'');
+ $('scenario-description').textContent=legacyName?'V0.1: recorded target selection and scripted motion.':({can:'Pick up a full-size can and drop it into the bin.',miss:'A first attempt misses. MOSS uses feedback to try again.',far:'The can is too far away. MOSS drives closer, then picks it up.',offset:'The can sits off the centre line. MOSS lines up with the offset and picks it up.'}[o.scenario]||'');
  $('run').textContent=s.running?'RUNNING…':s.api_enabled?'RUN LIVE →':'PLAY REPLAY →';$('pause').textContent=!s.running&&o.moving?'RESUME':'PAUSE';$('pause').disabled=!s.running&&!o.moving;$('stop').disabled=!s.running&&!o.moving;
  document.querySelectorAll('#manual button').forEach(b=>b.disabled=s.running||s.pending||o.moving||!modelReady);
  $('phase').textContent=s.error?'PAUSED':s.pending?'JEV IS CHOOSING':s.running?(s.mode==='manual'?'MANUAL PHYSICS CHECK':s.mode==='replay'?'REPLAY · NO API CALLS':'LIVE PHYSICS'):o.settled_in_bin?'COLLECTED':'READY / PAUSED';
